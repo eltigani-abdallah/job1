@@ -1,0 +1,22 @@
+def job2():
+    hight= int(input("indiquer l'hautuer s'il vous plait"))
+    width=0
+    print(" "*(hight+1),"/\\")
+    for i in range(hight-2):
+        firstloop=True
+        if i>0:
+            firstloop=False
+
+        if firstloop:
+            print(" "*(hight-i),"/"," "*(width), "\\")
+
+        else:
+            print(" "*(hight-i),"/"," "*(width+i+1), "\\")
+
+        #print(i, width)
+
+        width=i
+
+
+
+    print(" "*(hight-width-1),"/", "_"*(width*2+2), "\\")
